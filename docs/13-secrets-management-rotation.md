@@ -7,3 +7,7 @@ Database passwords, API keys, and sensitive tokens are decoupled from Terraform 
 A dedicated AWS Lambda rotation function rotates database credentials every 30 days without application disruption.
 
 
+## 3. Application Integration
+EC2 web instances retrieve DB credentials directly from Secrets Manager at startup and cache tokens in memory.
+
+
