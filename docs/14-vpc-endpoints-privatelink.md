@@ -8,3 +8,7 @@ VPC Endpoints allow private subnets to communicate with AWS services (S3, Secret
 - Interface Endpoints: Secrets Manager, SSM, and CloudWatch Logs powered by AWS PrivateLink
 
 
+## 3. Security Policy Attachment
+Endpoint policies enforce least-privilege access, restricting S3 operations strictly to authorized application buckets.
+
+
