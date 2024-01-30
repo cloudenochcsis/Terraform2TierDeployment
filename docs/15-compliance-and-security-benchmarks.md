@@ -7,3 +7,7 @@ The 2-tier infrastructure adheres to CIS AWS Foundations Benchmark v1.4, enforci
 - AWS Config recording all resource configuration drifts
 
 
+## 2. Automated Threat Detection
+Amazon GuardDuty continuously analyzes VPC Flow Logs, DNS logs, and CloudTrail events to identify anomalous behavior and compromised instances.
+
+
