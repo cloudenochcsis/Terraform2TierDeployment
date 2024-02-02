@@ -7,3 +7,9 @@ Web tier EC2 instances apply optimized sysctl settings:
 - `fs.file-max = 2097152`
 
 
+## 2. Multi-Layer Caching Strategy
+- Layer 1: CloudFront edge locations cache static web assets
+- Layer 2: In-memory application response caching
+- Layer 3: RDS query caching and optimized connection pooling
+
+
