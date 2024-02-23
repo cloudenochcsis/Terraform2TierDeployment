@@ -6,3 +6,7 @@
 - S3 Intelligent-Tiering automatically optimizes asset storage costs
 
 
+## 2. Cost Allocation Tagging
+Mandatory tags (`Environment`, `Project`, `Owner`, `CostCenter`) enable granular AWS Cost Explorer reports and budget alerts.
+
+
