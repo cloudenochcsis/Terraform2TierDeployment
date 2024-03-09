@@ -7,3 +7,10 @@ The architecture uses a dedicated `/16` VPC CIDR block (e.g., `10.0.0.0/16`) div
 - Private Subnets (DB): RDS Multi-AZ database cluster
 
 
+## 2. Multi-AZ High Availability
+Deploying across at least two Availability Zones (AZ-a and AZ-b) guarantees continuous uptime if an entire AWS data center experiences disruption.
+
+## 3. DNS Hostnames & Resolution
+Both `enable_dns_hostnames` and `enable_dns_support` must be enabled to support internal endpoint resolution.
+
+
