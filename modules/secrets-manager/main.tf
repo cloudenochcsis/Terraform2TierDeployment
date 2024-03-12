@@ -10,3 +10,13 @@ resource "aws_secretsmanager_secret" "db_secret" {
 }
 
 
+resource "aws_secretsmanager_secret_version" "db_secret_val" {
+  secret_id = aws_secretsmanager_secret.db_secret.id
+  secret_string = jsonencode({
+    engine   = "mysql"
+    port     = 3306
+    username = "admin"
+  })
+}
+
+
