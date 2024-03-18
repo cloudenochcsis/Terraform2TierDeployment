@@ -7,3 +7,10 @@ An Internet Gateway is attached to the VPC to enable bidirectional internet acce
 One NAT Gateway is provisioned in each public subnet. Private subnets route egress traffic (`0.0.0.0/0`) through their respective AZ's NAT Gateway.
 
 
+## 3. Route Table Hierarchy
+- Public Route Table: Routes `0.0.0.0/0` -> Internet Gateway (`igw`)
+- Private App Route Table A: Routes `0.0.0.0/0` -> NAT Gateway A
+- Private App Route Table B: Routes `0.0.0.0/0` -> NAT Gateway B
+- Database Route Table: Isolated, local VPC routes only
+
+
