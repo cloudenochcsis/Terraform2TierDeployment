@@ -8,3 +8,12 @@ Security groups operate as stateful firewalls at the instance ENI level. Ingress
 - Outbound: All traffic or restricted to App SG
 
 
+## 3. App Tier Security Group
+- Inbound: HTTP Port 80 strictly from ALB Security Group ID
+- Inbound: SSH Port 22 strictly from Bastion Host Security Group ID
+
+## 4. Database Security Group
+- Inbound: MySQL Port 3306 strictly from App Tier Security Group ID
+- Outbound: Deny all egress outside VPC
+
+
