@@ -11,3 +11,10 @@ The Application Load Balancer distributes Layer 7 HTTP/HTTPS traffic across dyna
 - Timeout: 5s, Interval: 30s
 
 
+## 3. SSL/TLS Termination
+ALB terminates TLS using AWS Certificate Manager (ACM) certificates with modern TLS 1.2+ security policies.
+
+## 4. HTTP to HTTPS Redirection
+HTTP listener on port 80 evaluates a default redirect action returning HTTP status 301 to port 443.
+
+
