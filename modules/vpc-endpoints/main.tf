@@ -11,3 +11,7 @@ resource "aws_vpc_endpoint" "s3" {
 }
 
 
+# PrivateLink interface endpoints for SSM and CloudWatch
+# Allows private instances to communicate securely without internet gateways
+
+
