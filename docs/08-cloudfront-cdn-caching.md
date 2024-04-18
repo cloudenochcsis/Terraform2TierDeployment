@@ -9,3 +9,7 @@ Amazon CloudFront delivers content via a global network of edge locations, reduc
 - HTTPS enforcement using ViewerProtocolPolicy `redirect-to-https`
 
 
+## 3. Custom Headers & Security
+CloudFront forwards custom `X-Forwarded-Host` and `X-Custom-Header` to the ALB origin. The ALB security group can restrict traffic strictly to CloudFront origin IP ranges.
+
+
