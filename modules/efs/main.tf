@@ -9,3 +9,7 @@ resource "aws_efs_file_system" "shared_fs" {
 }
 
 
+# EFS Mount Target configurations across private application subnets
+# Provides persistent shared storage for stateless EC2 web tiers
+
+
