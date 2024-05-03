@@ -6,3 +6,7 @@
 - RDS: `CPUUtilization`, `FreeableMemory`, `FreeStorageSpace`, `DatabaseConnections`
 
 
+## 2. Automated SNS Alerting
+Alarms trigger notifications to an Amazon SNS topic (`sns-2tier-alerts`), delivering incident notifications to operations teams and triggering automated remediation workflows.
+
+
