@@ -10,3 +10,9 @@ resource "aws_kms_key" "app_kms_key" {
 }
 
 
+resource "aws_kms_alias" "app_kms_alias" {
+  name          = "alias/${var.project_name}-key"
+  target_key_id = aws_kms_key.app_kms_key.key_id
+}
+
+
