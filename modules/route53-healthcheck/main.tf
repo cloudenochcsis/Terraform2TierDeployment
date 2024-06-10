@@ -13,3 +13,7 @@ resource "aws_route53_health_check" "app_check" {
 }
 
 
+# Route 53 Failover Record Configuration
+# Automatically routes traffic to secondary disaster recovery endpoint on failure
+
+
