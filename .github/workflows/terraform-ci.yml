@@ -18,3 +18,13 @@ jobs:
       - run: terraform fmt -check -recursive
 
 
+  security-scan:
+    name: Security Scan (tfsec)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aquasecurity/tfsec-action@v1.0.0
+        with:
+          soft_fail: true
+
+
