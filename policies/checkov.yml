@@ -1,0 +1,8 @@
+framework:
+  - terraform
+soft_fail: false
+compact: true
+quiet: false
+output: cli
+
+
