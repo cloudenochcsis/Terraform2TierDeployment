@@ -36,3 +36,19 @@ flowchart TD
 ```
 
 
+## Terraform Module Inventory
+
+| Module | Description | Key AWS Resources |
+| :--- | :--- | :--- |
+| `modules/vpc` | Multi-AZ VPC networking | `aws_vpc`, `aws_subnet`, `aws_internet_gateway` |
+| `modules/Nat` | Egress NAT gateways | `aws_nat_gateway`, `aws_eip`, `aws_route_table` |
+| `modules/SG` | Layered security groups | `aws_security_group` (ALB, App, DB, Bastion) |
+| `modules/alb` | Layer 7 load balancing | `aws_lb`, `aws_lb_target_group`, `aws_lb_listener` |
+| `modules/asg` | Elastic capacity tier | `aws_autoscaling_group`, `aws_launch_template` |
+| `modules/rds` | High availability database | `aws_db_instance`, `aws_db_subnet_group` |
+| `modules/cloudfront` | Edge CDN distribution | `aws_cloudfront_distribution` |
+| `modules/route_53` | Public DNS routing | `aws_route53_zone`, `aws_route53_record` |
+| `modules/kms` | Envelope encryption | `aws_kms_key`, `aws_kms_alias` |
+| `modules/cloudwatch` | Proactive monitoring | `aws_cloudwatch_metric_alarm`, `aws_sns_topic` |
+
+
