@@ -73,3 +73,13 @@ terraform destroy -auto-approve
 ```
 
 
+## Security & Operational Sign-off
+
+- [x] Multi-AZ High Availability across 2 Availability Zones
+- [x] Isolated Database Subnets with zero public ingress
+- [x] Application Load Balancer with HTTPS redirection
+- [x] Auto Scaling Group dynamic capacity based on CPU metrics
+- [x] KMS Customer Managed Key encryption enabled for data stores
+- [x] GitHub Actions automated format and security validation
+
+
