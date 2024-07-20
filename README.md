@@ -52,3 +52,24 @@ flowchart TD
 | `modules/cloudwatch` | Proactive monitoring | `aws_cloudwatch_metric_alarm`, `aws_sns_topic` |
 
 
+## Deployment Guide
+
+### Prerequisites
+- AWS CLI configured with administrator credentials (`aws configure`)
+- Terraform CLI `>= 1.3.0`
+- Registered domain in Route 53 (optional for custom domain)
+
+### Quickstart
+```bash
+cd root
+terraform init
+terraform plan -out=tfplan
+terraform apply tfplan
+```
+
+### Destroy Infrastructure
+```bash
+terraform destroy -auto-approve
+```
+
+
