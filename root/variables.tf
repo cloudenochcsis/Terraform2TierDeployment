@@ -29,4 +29,16 @@ variable "database_password" {}
 
 variable "certificate_domain_name" {}
 
-variable "additional_domain_name" {}
+variable "additional_domain_name" {}variable "enable_vpc_endpoints" {
+  type        = bool
+  description = "Toggle S3 Gateway and SSM VPC endpoints"
+  default     = true
+}
+
+variable "enable_backup_vault" {
+  type        = bool
+  description = "Toggle AWS Backup vault creation"
+  default     = true
+}
+
+
