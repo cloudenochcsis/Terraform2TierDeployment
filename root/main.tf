@@ -88,3 +88,9 @@ module "route53" {
   
 }
 
+module "secrets_manager" {
+  source       = "../modules/secrets-manager"
+  project_name = var.project_name
+}
+
+
