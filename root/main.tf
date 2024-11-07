@@ -94,3 +94,10 @@ module "secrets_manager" {
 }
 
 
+module "vpc_endpoints" {
+  source          = "../modules/vpc-endpoints"
+  vpc_id          = module.vpc.vpc_id
+  route_table_ids = [module.nat.private_route_table_id]
+}
+
+
