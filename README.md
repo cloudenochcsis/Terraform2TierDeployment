@@ -83,3 +83,12 @@ terraform destroy -auto-approve
 - [x] GitHub Actions automated format and security validation
 
 
+## Advanced Operational Capabilities
+
+- **Automated Secrets Rotation**: AWS Secrets Manager with Lambda rotation
+- **Internal Traffic Privacy**: S3 Gateway and SSM Interface VPC Endpoints
+- **Automated Backups**: AWS Backup plan with automated 7-day retention
+- **Disaster Recovery Runbooks**: Validated scripts for RDS reboot failover drills
+- **Automated Policy Scanning**: Checkov and Sentinel compliance gates
+
+
